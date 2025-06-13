@@ -42,11 +42,11 @@
                </tr>
                <tr>
                    <td>Date of Birth (MM/DD/YYYY):</td>
-                   <td><input type="text" id="dob" placeholder="MM/DD/YYYY"></td>
+                   <td><input type="text" id="dob" ></td>
                </tr>
                <tr>
                    <td>Social Security Number:</td>
-                   <td><input type="password" id="ssn" placeholder="XXX-XX-XXXX"></td>
+                   <td><input type="password" id="ssn" ></td>
                </tr>
                <tr>
                    <td>Address Line 1:</td>
@@ -66,22 +66,13 @@
                </tr>
                <tr>
                    <td>Email Address:</td>
-                   <td><input type="email" id="email" placeholder="name@domain.tld"></td>
+                   <td><input type="email" id="email" ></td>
                </tr>
                <tr>
                    <td>Describe Your Current Symptoms:</td>
-                   <td colspan="5"><textarea id="symptoms" rows="3" placeholder="Describe your symptoms here..."></textarea></td>
+                   <td colspan="5"><textarea id="symptoms" rows="3" ></textarea></td>
                </tr>
-               <tr>
-                   <td>Current Symptoms:</td>
-                   <td colspan="5">
-                       <input type="checkbox" id="fever"> Fever
-                       <input type="checkbox" id="headache"> Headache
-                       <input type="checkbox" id="nausea"> Nausea
-                       <input type="checkbox" id="vomiting"> Vomiting
-                       <input type="checkbox" id="none"> None <input type="checkbox" id="cough"> Cough <input type="checkbox" id="fatigue"> Fatigue
-                   </td>
-               </tr>
+               
                <tr>
                    <td>Gender:</td>
                    <td><input type="radio" name="gender" value="Male"> Male <input type="radio" name="gender" value="Female"> Female</td>
@@ -106,19 +97,13 @@
                    <td><input type="radio" name="smoker" value="Yes"> Yes <input type="radio" name="smoker" value="No"> No</td>
                </tr>
                <tr>
-                   <td>Are you currently on medication?</td>
-                   <td><input type="radio" name="medication" value="Yes"> Yes <input type="radio" name="medication" value="No"> No</td>
+                   <td>Are you an organ donor?</td>
+                   <td><input type="radio" name="organdonor" value="Yes"> Yes <input type="radio" name="organdonor" value="No"> No</td>
                </tr>
+               
+               
                <tr>
-                   <td>Pain Level (1-10):</td>
-                   <td><input type="range" id="pain" name="pain" min="1" max="10" value="5" oninput="document.getElementById('painValue').textContent = this.value">
-                   <span id="painValue">5</span></td>
-               </tr>
-               <tr>
-                   <td><input type="range" min="1" max="10" value="5" id="health"><span id="healthValue">5</span></td>
-               </tr>
-               <tr>
-                   <td>Desired User ID:</td>
+                   <td>Preferred User ID:</td>
                    <td><input type="text" id="userid"></td>
                    <td>Password:</td>
                    <td><input type="password" id="password"></td>
@@ -127,7 +112,7 @@
                </tr>
                <tr>
                    <td colspan="6">
-                       <button type="reset">CLEAR AND START OVER</button>
+                       <button type="reset">Clear</button>
                        <button type="submit">Submit</button>
                    </td>
                </tr>
